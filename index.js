@@ -4,7 +4,7 @@ module.exports = function(price, cash){
 	var rez = [],
 		change = cash - price,
 		coin;
-
+ 
 	if (isNaN(change)) throw new TypeError('price and cash should be a number'); 
 	if (change < 0) throw new Error('cash should be greater than price'); 
 	if (price < 0) throw new Error('price should be positive number');
